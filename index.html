@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Livro de Resumos · III Conferência Nacional Dom Alexandre Maria dos Santos</title>
+<meta name="description" content="Livro de Resumos da III Conferência Nacional Dom Alexandre Maria dos Santos e Jornadas Científicas — USTM, Maputo, 29 de Setembro a 1 de Outubro de 2026.">
+<meta property="og:title" content="Livro de Resumos · III Conferência Dom Alexandre">
+<meta property="og:description" content="USTM · Maputo, 29 de Setembro a 1 de Outubro de 2026">
+<meta property="og:image" content="capa.jpg">
+<meta name="theme-color" content="#F7A967">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --laranja:#F7A967;
+    --vermelho:#9E2229;
+    --vermelho-vivo:#C0393B;
+    --azul:#13305E;
+    --papel:#FCF8F4;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    color:var(--azul);
+    background:var(--papel);
+    line-height:1.55;
+  }
+
+  /* Hero: echoes the orange cover with red corner bands */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    background:var(--laranja);
+    padding:clamp(48px,8vw,96px) 20px clamp(56px,8vw,104px);
+  }
+  .hero::before,.hero::after{
+    content:"";position:absolute;pointer-events:none;
+  }
+  .hero::before{ /* top-right bands */
+    top:0;right:0;width:clamp(140px,26vw,300px);aspect-ratio:1;
+    background:
+      linear-gradient(225deg,var(--vermelho-vivo) 0 22%,transparent 22%),
+      linear-gradient(225deg,transparent 30%,var(--vermelho) 30% 40%,transparent 40%);
+  }
+  .hero::after{ /* bottom-left bands */
+    bottom:0;left:0;width:clamp(160px,30vw,360px);aspect-ratio:1;
+    background:
+      linear-gradient(45deg,var(--vermelho) 0 20%,transparent 20%),
+      linear-gradient(45deg,transparent 26%,var(--vermelho-vivo) 26% 34%,transparent 34%);
+  }
+  .hero-inner{
+    position:relative;z-index:1;
+    max-width:980px;margin:0 auto;
+    display:grid;grid-template-columns:minmax(0,300px) 1fr;
+    gap:clamp(28px,5vw,64px);align-items:center;
+  }
+  .capa{
+    display:block;width:100%;height:auto;
+    border-radius:4px;
+    box-shadow:0 18px 40px -12px rgba(94,20,24,.55);
+  }
+  .tipo{font-size:1.05rem;font-weight:300;letter-spacing:.02em;margin:0 0 .6rem}
+  h1{
+    font-size:clamp(1.75rem,4.2vw,2.9rem);
+    line-height:1.12;font-weight:600;margin:0 0 1.2rem;
+  }
+  .lema{
+    font-size:1rem;font-weight:600;max-width:52ch;margin:0 0 1.4rem;
+  }
+  .quando{margin:0 0 2rem;font-size:.98rem}
+  .acoes{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{
+    display:inline-flex;align-items:center;gap:.55em;
+    padding:14px 24px;border-radius:999px;
+    font:600 1rem/1 "Poppins",system-ui,sans-serif;
+    text-decoration:none;border:2px solid var(--azul);
+  }
+  .btn svg{width:1.15em;height:1.15em;flex:none}
+  .btn-primario{background:var(--azul);color:#fff}
+  .btn-primario:hover{background:#0c2248;border-color:#0c2248}
+  .btn-secundario{background:transparent;color:var(--azul)}
+  .btn-secundario:hover{background:rgba(19,48,94,.08)}
+  .btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+  .nota{font-size:.82rem;margin:.9rem 0 0;opacity:.85}
+
+  /* Eixos */
+  main{max-width:760px;margin:0 auto;padding:clamp(40px,6vw,72px) 20px}
+  h2{font-size:1.35rem;font-weight:600;margin:0 0 1.2rem;color:var(--vermelho)}
+  ol.eixos{list-style:none;counter-reset:e;margin:0;padding:0}
+  ol.eixos li{
+    counter-increment:e;
+    display:grid;grid-template-columns:2.4rem 1fr;gap:0 .8rem;
+    padding:1rem 0;border-top:1px solid rgba(19,48,94,.15);
+  }
+  ol.eixos li:last-child{border-bottom:1px solid rgba(19,48,94,.15)}
+  ol.eixos li::before{
+    content:counter(e);
+    grid-row:span 2;
+    font-size:1.6rem;font-weight:700;line-height:1.1;color:var(--laranja);
+  }
+  ol.eixos strong{font-weight:600}
+  ol.eixos span{font-size:.92rem;opacity:.8}
+
+  footer{
+    background:var(--azul);color:#fff;
+    padding:28px 20px;text-align:center;font-size:.85rem;
+  }
+  footer p{margin:.2rem 0}
+  footer a{color:#fff}
+
+  @media (max-width:680px){
+    .hero-inner{grid-template-columns:1fr;text-align:center}
+    .capa{max-width:220px;margin:0 auto}
+    .lema{margin-left:auto;margin-right:auto}
+    .acoes{justify-content:center}
+    .btn{flex:1 1 100%;justify-content:center}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <a href="livro-de-resumos.pdf" target="_blank" rel="noopener" aria-label="Abrir o Livro de Resumos">
+      <img class="capa" src="capa.jpg" width="377" height="600"
+           alt="Capa do Livro de Resumos da III Conferência Nacional Dom Alexandre Maria dos Santos">
+    </a>
+    <div>
+      <p class="tipo">Livro de Resumos</p>
+      <h1>III Conferência Nacional Dom Alexandre Maria dos Santos</h1>
+      <p class="lema">O Legado Multidisciplinar de Dom Alexandre: humanismo, humildade e ciência a favor da criação na contemporaneidade</p>
+      <p class="quando">Maputo, 29 de Setembro a 1 de Outubro de 2026</p>
+      <div class="acoes">
+        <a class="btn btn-primario" href="livro-de-resumos.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          Ler o livro
+        </a>
+        <a class="btn btn-secundario" href="livro-de-resumos.pdf" download="Livro-de-Resumos-III-Conferencia-Dom-Alexandre.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          Baixar PDF
+        </a>
+      </div>
+      <p class="nota">PDF, 30 páginas, 2,4 MB</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h2>Eixos temáticos</h2>
+  <ol class="eixos">
+    <li><strong>Educação por um Legado Humanista e de Paz</strong><span>Filosofia, pedagogia, ética na pesquisa e cultura de paz</span></li>
+    <li><strong>Sustentabilidade e o Cuidado da Terra – “A Nossa Casa Comum”</strong><span>Agricultura sustentável, conservação ambiental, políticas agrárias e resiliência climática</span></li>
+    <li><strong>Inovação, Tecnologia e Economia para o Bem Comum</strong><span>Inteligência artificial, energias aplicadas, modelos de gestão e empreendedorismo comunitário</span></li>
+    <li><strong>Sociedade, Direitos Humanos e Desenvolvimento Comunitário</strong><span>Justiça social, políticas públicas e fortalecimento comunitário</span></li>
+    <li><strong>Saúde, Bem-Estar e Bioética</strong><span>Saúde pública, bioética, segurança alimentar e impactos das mudanças climáticas na saúde</span></li>
+  </ol>
+</main>
+
+<footer>
+  <p><strong>Universidade São Tomás de Moçambique</strong></p>
+  <p>Av. Ahmed Sekou Touré, 610 – Maputo · <a href="https://www.ustm.ac.mz" rel="noopener">www.ustm.ac.mz</a></p>
+</footer>
+
+</body>
+</html>
