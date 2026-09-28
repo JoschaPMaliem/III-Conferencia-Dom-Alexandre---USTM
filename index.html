@@ -114,7 +114,9 @@
   @media (max-width:680px){
     .hero-inner{grid-template-columns:1fr;text-align:center}
     .capa{max-width:220px;margin:0 auto}
-    .lema{margin-left:auto;margin-right:auto}
+    /* The cover already shows the title; keep only the buttons */
+    .tipo,.lema,.quando,.nota{display:none}
+    h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
     .acoes{justify-content:center}
     .btn{flex:1 1 100%;justify-content:center}
   }
