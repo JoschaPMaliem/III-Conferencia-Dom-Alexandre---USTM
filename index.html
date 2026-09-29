@@ -88,25 +88,6 @@
   .btn-secundario:hover{background:rgba(19,48,94,.08)}
   .btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
   .nota{font-size:.82rem;margin:.9rem 0 0;opacity:.85}
-
-  /* Eixos */
-  main{max-width:760px;margin:0 auto;padding:clamp(40px,6vw,72px) 20px}
-  h2{font-size:1.35rem;font-weight:600;margin:0 0 1.2rem;color:var(--vermelho)}
-  ol.eixos{list-style:none;counter-reset:e;margin:0;padding:0}
-  ol.eixos li{
-    counter-increment:e;
-    display:grid;grid-template-columns:2.4rem 1fr;gap:0 .8rem;
-    padding:1rem 0;border-top:1px solid rgba(19,48,94,.15);
-  }
-  ol.eixos li:last-child{border-bottom:1px solid rgba(19,48,94,.15)}
-  ol.eixos li::before{
-    content:counter(e);
-    grid-row:span 2;
-    font-size:1.6rem;font-weight:700;line-height:1.1;color:var(--laranja);
-  }
-  ol.eixos strong{font-weight:600}
-  ol.eixos span{font-size:.92rem;opacity:.8}
-
   footer{
     background:var(--azul);color:#fff;
     padding:28px 20px;text-align:center;font-size:.85rem;
@@ -153,19 +134,8 @@
   </div>
 </header>
 
-<main>
-  <h2>Eixos temáticos</h2>
-  <ol class="eixos">
-    <li><strong>Educação por um Legado Humanista e de Paz</strong><span>Filosofia, pedagogia, ética na pesquisa e cultura de paz</span></li>
-    <li><strong>Sustentabilidade e o Cuidado da Terra – “A Nossa Casa Comum”</strong><span>Agricultura sustentável, conservação ambiental, políticas agrárias e resiliência climática</span></li>
-    <li><strong>Inovação, Tecnologia e Economia para o Bem Comum</strong><span>Inteligência artificial, energias aplicadas, modelos de gestão e empreendedorismo comunitário</span></li>
-    <li><strong>Sociedade, Direitos Humanos e Desenvolvimento Comunitário</strong><span>Justiça social, políticas públicas e fortalecimento comunitário</span></li>
-    <li><strong>Saúde, Bem-Estar e Bioética</strong><span>Saúde pública, bioética, segurança alimentar e impactos das mudanças climáticas na saúde</span></li>
-  </ol>
-</main>
-
 <footer>
-  <p><strong>Universidade São Tomás de Moçambique</strong></p>
+  <p><strong>Universidade São Tomás de Moçambique · CIDES</strong></p>
   <p>Av. Ahmed Sekou Touré, 610 – Maputo · <a href="https://www.ustm.ac.mz" rel="noopener">www.ustm.ac.mz</a></p>
 </footer>
 
